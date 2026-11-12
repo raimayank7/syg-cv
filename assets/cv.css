@@ -1,0 +1,77 @@
+/* CV and Biodata: own styles on top of the shared frame. The sheet (.bs) is always black on white, like paper. */
+.rm-lead{font-size:1.08rem;color:var(--soft)}
+.rm-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+.rm-grid a{flex-direction:column;align-items:flex-start;gap:4px}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}
+.btn.sm{min-height:40px}
+.rb{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);align-items:start;margin:14px 0}
+@media (min-width:1000px){.rb{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.rb-side{position:sticky;top:78px;max-height:calc(100vh - 90px);overflow:auto}}
+.rb fieldset{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:12px 14px 14px;margin:0 0 14px;min-width:0}
+.rb legend{font:700 1rem var(--font-head);padding:0 6px}
+.rb-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.rb-f{margin:0 0 10px;min-width:0}
+.rb-f label{display:block;font-weight:600;font-size:.86rem;margin-bottom:3px}
+.rb-f input,.rb-f textarea{width:100%;font:400 16px/1.4 var(--font);padding:9px 10px;border:1px solid var(--field-line);border-radius:10px;background:var(--field);color:var(--ink);min-height:44px}
+.rb-f textarea{resize:vertical}
+.rb-item{border-top:1px dashed var(--line);padding-top:10px;margin-top:6px}
+.rb-item:first-of-type{border-top:0;padding-top:0}
+.rb-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}
+.rb-bar{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;margin-bottom:10px}
+.rb-bar .chips{margin:6px 0}
+.rb-bar .chips button{min-height:40px}
+.rb-bar b{font-size:.86rem}
+.rb-sw button{width:40px;height:40px;min-height:40px;padding:0;border-radius:50%;border:3px solid var(--surface);box-shadow:0 0 0 1px var(--line)}
+.rb-sw button[aria-pressed=true]{box-shadow:0 0 0 3px var(--ink)}
+.rb-size{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.rb-size input{flex:1 1 140px;min-height:40px;accent-color:var(--accent)}
+.rb-fit{font-weight:600;font-size:.92rem;margin:8px 0 0;padding:8px 10px;border-radius:8px}
+.rb-fit.ok{background:rgba(22,163,74,.14)}.rb-fit.bad{background:rgba(220,38,38,.14)}
+.rb-acts{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.rb-acts .btn,.rb-acts label.btn{min-height:44px}
+.rb-wrap{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:6px;background:#fff}
+.ba{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));margin:12px 0}
+.ba>div{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface)}
+.ba b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--soft);margin-bottom:4px}
+.ba .no{border-left:4px solid var(--bad)}.ba .yes{border-left:4px solid var(--ok)}
+.ck{list-style:none;padding:0}
+.ck label{display:flex;gap:12px;align-items:flex-start;min-height:44px;padding:8px 0;border-bottom:1px solid var(--line)}
+.ck input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--accent)}
+.msg{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+.msg p{white-space:pre-line;margin:0}
+.bs{position:absolute;left:0;top:0;width:210mm;height:297mm;transform-origin:0 0;background:#fff;color:#111;padding:9mm;font:400 var(--bs-f,11pt)/1.42 Georgia,'Times New Roman',serif;--bs-c:#7f1d1d;text-align:left}
+.bs *{box-sizing:border-box}
+.bs-in{height:100%;overflow:hidden;padding:7mm 9mm}
+.bs-border .bs-in{border:3px double var(--bs-c);outline:1px solid var(--bs-c);outline-offset:-2.2mm}
+.bs-plain .bs-in{padding:4mm 6mm}
+.bs-band .bs-in{border-top:5mm solid var(--bs-c);border-bottom:5mm solid var(--bs-c);padding:5mm 6mm}
+.bs .bs-top{text-align:center;margin:0 0 .2em;color:var(--bs-c);font-weight:700}
+.bs .bs-h{font:700 1.7em/1.15 Georgia,'Times New Roman',serif;text-align:center;letter-spacing:.12em;color:var(--bs-c);margin:0 0 .6em}
+.bs h2{font:700 1.05em/1.2 Georgia,'Times New Roman',serif;color:var(--bs-c);border-bottom:1px solid var(--bs-c);margin:.7em 0 .35em;padding-bottom:.12em;letter-spacing:.03em}
+.bs section{margin:0}
+.bs table{width:100%;border-collapse:collapse;background:none}
+.bs th,.bs td{border:0;padding:.14em .3em .14em 0;vertical-align:top;text-align:left;color:#111;background:none;font-size:1em}
+.bs th{width:34%;font-weight:700}
+.bs td::before{content:": ";font-weight:700}
+.bs table.bs-grid th,.bs table.bs-grid td{border:1px solid #555;padding:.25em .4em;width:auto}
+.bs table.bs-grid td::before{content:none}
+.bs p{margin:0 0 .3em}
+.bs .bs-ph{display:flex;gap:5mm;align-items:flex-start}
+.bs .bs-ph>div{flex:1;min-width:0}
+.bs .bs-ph img{width:34mm;height:45mm;object-fit:cover;border:1px solid var(--bs-c);flex:none}
+.bs .bs-sign{display:flex;justify-content:space-between;align-items:flex-end;margin-top:2.2em}
+.bs .bs-sign div:last-child{text-align:right}
+.bd-cust,.bd-trow{border-top:1px dashed var(--line);padding-top:8px;margin-top:4px}
+.cvs{background:#fff;color:#111;border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin:14px 0;font:400 .95rem/1.5 Georgia,'Times New Roman',serif;overflow-wrap:anywhere}
+.cvs h3{font:700 1.4rem/1.15 Georgia,serif;margin:0 0 2px;color:#111}
+.cvs h4{font:700 .95rem/1.2 Georgia,serif;text-transform:uppercase;letter-spacing:.05em;color:#7f1d1d;border-bottom:1px solid #7f1d1d;margin:14px 0 6px;padding-bottom:2px}
+.cvs p{margin:0 0 4px;color:#111}.cvs ul,.cvs ol{margin:2px 0 6px;padding-left:22px}.cvs li{color:#111;margin:0 0 2px}
+.wd .chips button{min-height:44px;text-align:left}
+.hi{font-family:'Noto Sans Devanagari','Nirmala UI',Mangal,sans-serif}
+@page{size:A4;margin:0}
+@media print{
+  body.rb-page>*:not(main),body.rb-page main>*:not(.rb-main),.rb-form-col,.rb-bar,.rb-acts,.rb-fit,.boot{display:none!important}
+  body.rb-page,body.rb-page main,.rb-main,.rb,.rb-side{display:block!important;margin:0!important;padding:0!important;max-width:none!important;position:static!important;max-height:none!important;overflow:visible!important;background:#fff!important}
+  .rb-wrap{border:0;border-radius:0;height:auto!important;overflow:visible}
+  .bs{position:static!important;transform:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
